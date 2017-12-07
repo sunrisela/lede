@@ -727,6 +727,15 @@ define Device/tl-wr1043nd-v4
   IMAGE/factory.bin := append-rootfs | tplink-safeloader factory
 endef
 
+define Device/tl-wr2041n-v2
+  $(Device/tplink-8mlzma)
+  DEVICE_TITLE := TP-LINK TL-WR2041N v2
+  DEVICE_PACKAGES := -wpad-mini wpad
+  BOARDNAME := TL-WR2041N-v2
+  DEVICE_PROFILE := TLWR2041
+  TPLINK_HWID := 0x20410002
+endef
+
 define Device/tl-wr2543-v1
   $(Device/tplink-8mlzma)
   DEVICE_TITLE := TP-LINK TL-WR2543N/ND v1
@@ -737,7 +746,7 @@ define Device/tl-wr2543-v1
   IMAGE/sysupgrade.bin := append-rootfs | mktplinkfw sysupgrade -v 3.13.99
   IMAGE/factory.bin := append-rootfs | mktplinkfw factory -v 3.13.99
 endef
-TARGET_DEVICES += tl-wr1043nd-v1 tl-wr1043nd-v2 tl-wr1043nd-v3 tl-wr1043nd-v4 tl-wr1043n-v5 tl-wr2543-v1
+TARGET_DEVICES += tl-wr1043nd-v1 tl-wr1043nd-v2 tl-wr1043nd-v3 tl-wr1043nd-v4 tl-wr1043n-v5 tl-wr2041n-v2 tl-wr2543-v1
 
 define Device/tl-wr703n-v1
   $(Device/tplink-4mlzma)
