@@ -270,6 +270,9 @@ tplink_board_detect() {
 	"104300"*)
 		model="TP-Link TL-WR1043N/ND"
 		;;
+	"204100"*)
+		model="TP-Link TL-WR2041N"
+		;;
 	"254300"*)
 		model="TP-Link TL-WR2543N/ND"
 		;;
@@ -1030,6 +1033,9 @@ ar71xx_board_detect() {
 		;;
 	*TL-WPA8630)
 		name="tl-wpa8630"
+		;;
+	*"TL-WR2041N v2")
+		name="tl-wr2041n-v2"
 		;;
 	*TL-WR741ND)
 		name="tl-wr741nd"

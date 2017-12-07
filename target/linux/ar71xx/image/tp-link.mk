@@ -836,6 +836,16 @@ define Device/tl-wr1043nd-v4
 endef
 TARGET_DEVICES += tl-wr1043nd-v1 tl-wr1043nd-v2 tl-wr1043nd-v3 tl-wr1043nd-v4
 
+define Device/tl-wr2041n-v2
+  $(Device/tplink-8mlzma)
+  DEVICE_TITLE := TP-LINK TL-WR2041N v2
+  DEVICE_PACKAGES := -wpad-mini wpad
+  BOARDNAME := TL-WR2041N-v2
+  DEVICE_PROFILE := TLWR2041
+  TPLINK_HWID := 0x20410002
+endef
+TARGET_DEVICES += tl-wr2041n-v2
+
 define Device/tl-wr2543-v1
     $(Device/tplink-8mlzma)
     DEVICE_TITLE := TP-LINK TL-WR2543N/ND
