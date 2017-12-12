@@ -3,12 +3,13 @@
 .*.swp
 /env
 /dl
-/.config
+/*.config
 /.config.old
 /bin
 /build_dir
 /staging_dir
 /tmp
+/log
 /logs
 /feeds
 /feeds.conf
